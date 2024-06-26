@@ -60,6 +60,7 @@ html {
     font-weight: 700;
     font-style: normal;
 }
+
 #skip
 {
     position:absolute;
@@ -90,15 +91,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
-}
-header {
+    background-color: var(--light-blue);
     position: fixed;
     top: 0;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 }
+
 #banner-logo p{
     align-self: center;
+}
+#banner-links{
+    height: 100%;
 }
 #logo{
     width: 20%;
@@ -112,14 +115,14 @@ header {
     display:flex;
     justify-content: right;
     align-items: center;
-    margin-right: 50px;
+    padding-right: 50px;
+    background-color: white;
 }
 nav ul {
     list-style-type: none;
     display: flex;
     padding-left: 50px;
     padding-right: 25px;
-    height: 142.42px;
     align-items: center;
     background-color: var(--light-blue);
 }
@@ -219,13 +222,34 @@ h2 {
     color: var(--dark-blue);
     padding-bottom: 35px;
 }
+#gallery{
+    width: 100%;
+    background-color: var(--light-grey);
+    padding-bottom: 100px;
+}
+.gallery-header{
+    padding: 25px 25px;
+}
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    place-items: center;
+
+
+}
+.gallery-slot{
+    border: 10px solid var(--darker-blue);
+    height: 300px;
+    width: 85%;
+}
 .centered{
     text-align: center;
 }
 #testimonials{
     width: 100%;
     margin: auto;
-    padding: 1rem;
     text-align: center;
     background-color: var(--light-blue);
 }
@@ -330,6 +354,10 @@ input[type=submit] {
     color: white;
     font-size: 1.25rem;
 }
+input[type=submit]:hover {
+    background-color: white;
+    color: var(--dark-blue);
+}
 .right-column :nth-child(3){
     margin-top: 10px;
 }
@@ -347,3 +375,60 @@ footer img{
     width: 50px;
     height: auto;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 600px;
+        background-color: var(--light-blue);
+    }
+    header{
+        display: inline-block;
+        width: 100%;
+        left: 0;
+    }
+    nav ul{
+        padding-left: unset;
+        padding-right: unset;
+        justify-content: center;
+    }
+    #banner-links{
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    #banner-logo{
+        justify-content: center;
+    }
+    #banner-logo p{
+        display: none;
+    }
+    .hero-content{
+        width: 75%;
+    }
+    .testimonials-grid{
+        display: block;
+    }
+    #badges{
+        justify-content: center;
+        gap: unset;
+        background-color: white;
+        width: 100%;
+    }
+    #badges img{
+        width: 100px;
+    }
+    #services-list{
+        display: block;
+    }
+    .gallery-grid{
+        grid-template-columns: none;
+    }
+    .gallery-slot{
+        width: 60%;
+    }
+    .form-container{
+        display: block;
+    }
+    .right-column{
+        margin-top: 25px;
+    }
+    }
