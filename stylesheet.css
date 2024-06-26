@@ -241,8 +241,10 @@ h2 {
 }
 .gallery-slot{
     border: 10px solid var(--darker-blue);
+    border-radius: 25px;
     height: 300px;
     width: 85%;
+    text-align: center;
 }
 .centered{
     text-align: center;
@@ -361,7 +363,9 @@ input[type=submit]:hover {
 .right-column :nth-child(3){
     margin-top: 10px;
 }
-
+#contact-info-mobile{
+margin: 55px;
+}
 footer {
     display: flex;
     align-items: center;
@@ -431,7 +435,14 @@ footer img{
     .form-container{
         display: block;
     }
+    #contact-info-mobile{
+        text-align: center;
+    }
     .right-column{
         margin-top: 25px;
+    }
+    #contact h2{
+        margin: 20px;
+        text-align: center;
     }
     }
