@@ -378,13 +378,16 @@ footer img{
 
 @media screen and (max-width: 600px) {
     body {
-        width: 600px;
+        width: 430px;
         background-color: var(--light-blue);
     }
     header{
         display: inline-block;
         width: 100%;
         left: 0;
+    }
+    .hide{
+        display: none;
     }
     nav ul{
         padding-left: unset;
