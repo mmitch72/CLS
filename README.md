@@ -1,7 +1,7 @@
 # CLS
 
- -Single-Page Business Website /n
- -Interactive /n
- -Contact Form Validation /n
+ -Single-Page Business Website
+ -Interactive
+ -Contact Form Validation
  -Responsive Mobile View
  
